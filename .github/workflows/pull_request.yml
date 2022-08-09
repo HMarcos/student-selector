@@ -16,5 +16,3 @@ jobs:
                   file_name: .env.test
             - name: Run tests
               run: docker-compose -f docker-compose-test.yml run student-selector-app npm run test
-            - name: Build
-              run: npm i && npx prisma generate && npm run build
